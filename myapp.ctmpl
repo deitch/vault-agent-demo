@@ -1,0 +1,4 @@
+{{ with secret "secret/data/payment" }}
+Username: {{ .Data.data.username }}
+Password: {{ .Data.data.password }}
+{{ end }}
